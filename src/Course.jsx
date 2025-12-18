@@ -1,12 +1,13 @@
-import html from "./assets/html.png";
-const course1="HTML";
-function Course(){
-    return(
-        <div className="card">
-            <img src={html}alt="" />
-            <h3>{course1}</h3>
-            <p>This is craziee code's HTML course</p>
-        </div>
-    );
+function Course(props){
+    if(props.show){
+        return(
+            <div className="card">
+                <img src={props.image}alt="" />
+                <h3>{props.name}</h3>
+                <p>{props.price}</p>
+                <h5>Ratings:{props.ratings}</h5>
+            </div>
+        );
+    }
 }
 export default Course;
