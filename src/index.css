@@ -4,4 +4,12 @@
   border: 1px solid black;
   border-radius: 5px;
   font-family: sans-serif;
+  margin: 20px;
+  padding: 2px;
+  text-align: center;
+  display: inline-block;
+}
+
+.card img{
+  width: 200px;
 }
